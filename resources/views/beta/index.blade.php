@@ -23,7 +23,7 @@
                             <th>Pembuat</th>
                             <th>Harga</th>
                             <th>Stok</th>
-                            <th>???</th>
+                            <th></th>
                         </tr>
                         </thead>
                         <tbody>

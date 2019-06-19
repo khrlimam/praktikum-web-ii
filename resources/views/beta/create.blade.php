@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-12">
+            <div class="col-md-8">
                 <div class="card">
                     <div class="card-body">
                         <h3 class="card-title">
@@ -13,9 +13,9 @@
                             @csrf
 
                             <div class="form-group row">
-                                <label for="merek" class="col-md-3 col-form-label">{{ __('Merek') }}</label>
+                                <label for="merek" class="col-md-2 col-form-label">{{ __('Merek') }}</label>
 
-                                <div class="col-md-8">
+                                <div class="col-md-10">
                                     <input id="merek" type="text"
                                            class="form-control{{ $errors->has('merek') ? ' is-invalid' : '' }}"
                                            name="merek" value="{{ old('merek') }}" required autofocus>
@@ -29,9 +29,9 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="pembuat" class="col-md-3 col-form-label">{{ __('Pembuat') }}</label>
+                                <label for="pembuat" class="col-md-2 col-form-label">{{ __('Pembuat') }}</label>
 
-                                <div class="col-md-8">
+                                <div class="col-md-10">
                                     <input id="pembuat" type="text"
                                            class="form-control{{ $errors->has('pembuat') ? ' is-invalid' : '' }}"
                                            name="pembuat" value="{{ old('pembuat') }}" required>
@@ -45,9 +45,9 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="harga" class="col-md-3 col-form-label">{{ __('Harga') }}</label>
+                                <label for="harga" class="col-md-2 col-form-label">{{ __('Harga') }}</label>
 
-                                <div class="col-md-8">
+                                <div class="col-md-10">
                                     <input id="harga" type="number"
                                            class="form-control{{ $errors->has('harga') ? ' is-invalid' : '' }}"
                                            name="harga" required>
@@ -61,9 +61,9 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="stok" class="col-md-3 col-form-label">{{ __('Stok') }}</label>
+                                <label for="stok" class="col-md-2 col-form-label">{{ __('Stok') }}</label>
 
-                                <div class="col-md-8">
+                                <div class="col-md-10">
                                     <input id="stok" type="number"
                                            class="form-control{{ $errors->has('stok') ? ' is-invalid' : '' }}"
                                            name="stok" required>
@@ -79,8 +79,8 @@
 
                             <fieldset class="form-group">
                                 <div class="row">
-                                    <legend class="col-form-label col-sm-3 pt-0">Tipe</legend>
-                                    <div class="col-sm-8">
+                                    <legend class="col-form-label col-sm-2 pt-0">Tipe</legend>
+                                    <div class="col-sm-10">
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="tipe"
                                                    id="laptop"
@@ -103,7 +103,7 @@
 
 
                             <div class="form-group row mb-0">
-                                <div class="col-md-6 offset-md-3">
+                                <div class="col-md-6 offset-md-2">
                                     <button type="submit" class="btn btn-primary">
                                         {{ __('Simpan') }}
                                     </button>
